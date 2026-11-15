@@ -448,14 +448,14 @@ export const LIVE_LABS: LabTool[] = [
   {
     id: 'aws-cost-estimator',
     title: 'AWS Cost & Architecture Estimator',
-    subtitle: 'Interactive workload sizing for ECS/Fargate, Lambda, RDS & SQS topologies',
+    subtitle: 'Interactive workload sizing comparing AWS Lambda vs. EKS (and ECS/Fargate), RDS & SQS',
     stage: 'Upcoming on gauravkumar-labs',
     description:
-      'Model monthly AWS infrastructure trade-offs before writing Terraform. Compare Fargate container concurrency against Lambda invocation profiles, RDS Multi-AZ sizing, and NAT Gateway egress patterns for .NET workloads.',
+      'Model monthly AWS infrastructure trade-offs before writing Terraform. Compare serverless AWS Lambda invocation profiles against containerized AWS EKS clusters (with optional ECS/Fargate), RDS Multi-AZ sizing, and NAT Gateway egress patterns for .NET workloads.',
     capabilities: [
-      'Side-by-side ECS/Fargate vs. AWS Lambda cost curve modeling across RPS profiles',
-      'RDS PostgreSQL / SQL Server Multi-AZ and Read Replica estimation',
-      'Exportable Terraform variable baselines and architecture decision notes',
+      'Side-by-side AWS Lambda vs. AWS EKS (control plane, EC2/Karpenter nodes) & ECS/Fargate cost curves across RPS profiles',
+      'RDS PostgreSQL / SQL Server Multi-AZ, Read Replica, and SQS/NAT Gateway egress estimation',
+      'Exportable Terraform variable baselines and portability vs. ops-overhead decision notes',
     ],
     stack: ['React', 'TypeScript', 'AWS Pricing Models', 'Terraform Specs'],
     url: 'https://gauravkumar-labs.vercel.app',
