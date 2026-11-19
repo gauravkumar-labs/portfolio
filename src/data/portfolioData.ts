@@ -60,6 +60,7 @@ export interface LabTool {
   capabilities: string[];
   stack: string[];
   url: string;
+  isLive?: boolean;
   image: string;
   imageAlt: string;
   accent: 'amber' | 'cyan';
@@ -449,7 +450,7 @@ export const LIVE_LABS: LabTool[] = [
     id: 'aws-cost-estimator',
     title: 'AWS Cost & Architecture Estimator',
     subtitle: 'Interactive workload sizing comparing AWS Lambda vs. EKS (and ECS/Fargate), RDS & SQS',
-    stage: 'Upcoming on gauravkumar-labs',
+    stage: 'Live Interactive Tool',
     description:
       'Model monthly AWS infrastructure trade-offs before writing Terraform. Compare serverless AWS Lambda invocation profiles against containerized AWS EKS clusters (with optional ECS/Fargate), RDS Multi-AZ sizing, and NAT Gateway egress patterns for .NET workloads.',
     capabilities: [
@@ -458,7 +459,8 @@ export const LIVE_LABS: LabTool[] = [
       'Exportable Terraform variable baselines and portability vs. ops-overhead decision notes',
     ],
     stack: ['React', 'TypeScript', 'AWS Pricing Models', 'Terraform Specs'],
-    url: 'https://gauravkumar-labs.vercel.app',
+    url: 'https://aws-architecture-cost-calculator.vercel.app/',
+    isLive: true,
     image: awsEstimatorImg,
     imageAlt: 'Minimalist dark architectural rendering of modular cloud compute blocks and balance plates',
     accent: 'amber',

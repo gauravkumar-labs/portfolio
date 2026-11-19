@@ -27,7 +27,7 @@ export default function LiveLabsSection() {
               Live Labs &amp; Demos
             </h2>
             <p className="mt-3 text-base text-zinc-400">
-              Interactive architecture utilities and developer tools being shipped at{' '}
+              Interactive architecture utilities and developer tools—featuring live deployments and upcoming releases from{' '}
               <a
                 href={SOCIAL_LINKS.labs}
                 target="_blank"
@@ -94,7 +94,7 @@ export default function LiveLabsSection() {
                       >
                         {lab.stage}
                       </span>
-                      <span className="font-mono text-zinc-300">gauravkumar-labs.vercel.app</span>
+                      <span className="font-mono text-zinc-300">{new URL(lab.url).hostname}</span>
                     </div>
                   </div>
 
@@ -119,7 +119,7 @@ export default function LiveLabsSection() {
                     rel="noopener noreferrer"
                     className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg bg-zinc-100 px-4 py-2 text-xs font-semibold text-zinc-950 transition-colors hover:bg-cyan-300 whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
                   >
-                    <span>Launch on Labs</span>
+                    <span>{lab.isLive ? 'Open Live App' : 'Launch on Labs'}</span>
                     <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
                   </a>
 
@@ -176,7 +176,7 @@ export default function LiveLabsSection() {
 
               <div className="border-t border-zinc-800/80 pt-4">
                 <h4 className="font-display text-sm font-semibold text-zinc-100">
-                  Planned Interactive Capabilities
+                  {selectedLab.isLive ? 'Interactive Capabilities' : 'Planned Interactive Capabilities'}
                 </h4>
                 <ul className="mt-2.5 space-y-2 text-sm text-zinc-400">
                   {selectedLab.capabilities.map((cap, idx) => (
@@ -209,7 +209,7 @@ export default function LiveLabsSection() {
                 rel="noopener noreferrer"
                 className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg bg-cyan-400 px-4 py-2 text-xs font-semibold text-zinc-950 hover:bg-cyan-300"
               >
-                <span>Open gauravkumar-labs.vercel.app</span>
+                <span>Open {new URL(selectedLab.url).hostname}</span>
                 <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
               </a>
             </div>

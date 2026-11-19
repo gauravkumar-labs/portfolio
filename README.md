@@ -4,6 +4,7 @@ Executive personal portfolio for **Gaurav Kumar**, Senior Software Engineer spec
 
 - **GitHub:** [github.com/gauravkumar-labs](https://github.com/gauravkumar-labs)
 - **LinkedIn:** [linkedin.com/in/gaurav-kumar-a154121b](https://www.linkedin.com/in/gaurav-kumar-a154121b/)
+- **AWS Cost & Architecture Estimator:** [aws-architecture-cost-calculator.vercel.app](https://aws-architecture-cost-calculator.vercel.app/)
 - **Labs Sandbox:** [gauravkumar-labs.vercel.app](https://gauravkumar-labs.vercel.app)
 
 ---
@@ -20,7 +21,7 @@ Built with a dark-mode developer aesthetic (zinc/slate palette with cyan and AWS
    - *01. Legacy .NET Framework to Cloud-Native .NET on AWS EKS* — Kubernetes portability across AWS, multi-cloud, and on-premises environments.
    - *02. Event-Driven Lead Processing Pipeline with SQS & Lambda* — Async decoupling, partial-batch failure handling, and DynamoDB idempotency.
    - *03. Enterprise AI Knowledge Assistant using .NET Semantic Kernel & RAG* — VPC-private retrieval with ACL enforcement and citation grounding.
-5. **Live Labs & Demos**: Showcase cards and architecture specification modals for upcoming interactive tools hosted at `gauravkumar-labs.vercel.app` (including the **AWS Cost & Architecture Estimator** and **.NET Code Review AI Helper**).
+5. **Live Labs & Demos**: Showcase cards and architecture specification modals featuring the live **AWS Cost & Architecture Estimator** ([aws-architecture-cost-calculator.vercel.app](https://aws-architecture-cost-calculator.vercel.app/)) and the upcoming **.NET Code Review AI Helper** at `gauravkumar-labs.vercel.app`.
 
 ---
 
